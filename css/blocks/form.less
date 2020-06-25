@@ -1,0 +1,32 @@
+// main: ../style.less
+
+.form__label {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: @red;
+  outline: none;
+  cursor: pointer;
+}
+
+.form__input {
+  width: 320px;
+  font-family: inherit;
+  font-size: 16px;
+  color: @gray2;
+  border: 0px solid;
+  border-bottom: 1px solid @gray;
+  margin-right: 32px;
+  padding-bottom: 6px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &[type="text"] {
+    color: @gray;
+    font-weight: 500;
+    background: none;
+  }
+}

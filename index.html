@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7e383bb6e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__logo">
+              <div class="header__img">
+                <img src="img/headerlogo.png" alt="" />
+              </div>
+              <div class="header__title">Видеосервис</div>
+            </div>
+            <form class="from" action="#" method="post">
+              <input
+                name="input-search"
+                class="form__input"
+                type="text"
+                id="input-search"
+                placeholder="Поиск..."
+              />
+              <input type="submit" for="input-search" class="form__label" value="Найти"></input>
+            </form>
+            <button id="myBtn" class="btn" type="submit">
+              Войти
+            </button>
+          </div>
+        </div>
+      </header>
+
+    <div class="tabs">
+      <nav class="tabs__items">
+        <a href="#tabs_01" class="tabs__item">Фильмы</a>
+        <a href="#tabs_02" class="tabs__item">Телеканалы</a>
+      </nav>
+
+      <div class="container">
+        <div class="tabs__body">
+          <div id="tabs_01" class="tabs__block">
+            <div class="new">
+              <img class="new__logo" src="img/newslogo.png" />
+              <div class="new__inner">
+                <div class="new__item">
+                  <img src="img/new1.png" alt="" />
+                  <div class="new__title">
+                    Мульт в кино. Выпуск №103. Некогда грустить!
+                  </div>
+                </div>
+                <div class="new__item">
+                  <img src="img/new2.png" alt="" />
+                  <div class="new__title">Новый Бэтмен</div>
+                </div>
+                <div class="new__item">
+                  <img class="new__image" src="img/new3.png" alt="" />
+                  <div class="new__info">
+                    Фильм повествует о череде событий, произошедших в Голливуде
+                    в 1969 году, на закате его «золотого века». Известный актер
+                    Рик Далтон и его дублер Клифф Бут пытаются найти свое место
+                    в стремительно меняющемся мире киноиндустрии.
+                  </div>
+                  <div class="new__title">Однажды... в Голливуде</div>
+                </div>
+                <div class="new__item">
+                  <img class="new__image" src="img/new4.png" alt="" />
+                  <div class="new__title">Стриптизёрши</div>
+                </div>
+                <!-- New inner -->
+              </div>
+              <!-- New -->
+            </div>
+            <div class="genres">
+              <div class="genres__title">Жанры</div>
+              <div class="genres__inner">
+                <div class="genres__item">
+                  <img class="genres__img" src="img/genres1.png" alt="" />
+                  <div class="genres__info">
+                    <img
+                      src="img/genreslogo1.png"
+                      alt=""
+                      class="genres__logo"
+                    />
+                    <div class="genres__subtitle">Комедии</div>
+                  </div>
+                </div>
+                <div class="genres__item">
+                  <img class="genres__img" src="img/genres2.png" alt="" />
+                  <div class="genres__info">
+                    <img
+                      src="img/genreslogo2.png"
+                      alt=""
+                      class="genres__logo"
+                    />
+                    <div class="genres__subtitle">Драмы</div>
+                  </div>
+                </div>
+                <div class="genres__item">
+                  <img class="genres__img" src="img/genres3.png" alt="" />
+                  <div class="genres__info">
+                    <img
+                      src="img/genreslogo3.png"
+                      alt=""
+                      class="genres__logo"
+                    />
+                    <div class="genres__subtitle">Фантастика</div>
+                  </div>
+                </div>
+                <div class="genres__item">
+                  <img class="genres__img" src="img/genres4.png" alt="" />
+                  <div class="genres__info">
+                    <img
+                      src="img/genreslogo4.png"
+                      alt=""
+                      class="genres__logo"
+                    />
+                    <div class="genres__subtitle">Ужасы</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="tabs_02" class="tabs__block">
+          <div class="channels">
+            <div class="container">
+              <div class="channels__inner">
+                <div class="channels__item">
+                  <div class="channels__img">
+                    <img
+                      src="img/channelslogo1.png"
+                      alt=""
+                      class="channels__logo"
+                    />
+                  </div>
+                  <div class="channels__allinfo">
+                    <div class="channels__title">Первый канал</div>
+                    <div class="channels__firstinfo">
+                      13:00 Новости (с субтитрами)
+                    </div>
+                    <div class="channels__info">14:00 Давай поженимся</div>
+                    <div class="channels__info">15:00 Другие новости</div>
+                  </div>
+                </div>
+
+                <div class="channels__item">
+                  <div class="channels__img">
+                    <img
+                      src="img/channelslogo2.png"
+                      alt=""
+                      class="channels__logo"
+                    />
+                  </div>
+                  <div class="channels__allinfo">
+                    <div class="channels__title">2x2</div>
+                    <div class="channels__firstinfo">
+                      13:00 МУЛЬТ ТВ. Сезон 4, 7 серия
+                    </div>
+                    <div class="channels__info">
+                      14:00 ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия
+                    </div>
+                    <div class="channels__info">
+                      15:00 БУРДАШЕВ. Сезон 1, 20 серия
+                    </div>
+                  </div>
+                </div>
+
+                <div class="channels__item">
+                  <div class="channels__img">
+                    <img
+                      src="img/channelslogo3.png"
+                      alt=""
+                      class="channels__logo"
+                    />
+                  </div>
+                  <div class="channels__allinfo">
+                    <div class="channels__title">РБК</div>
+                    <div class="channels__firstinfo">
+                      13:00 ДЕНЬ. Горючая смесь: как бороться с суррогатом на
+                      АЗС
+                    </div>
+                    <div class="channels__info">14:00 ДЕНЬ. Главные темы</div>
+                    <div class="channels__info">15:00 Главные новости</div>
+                  </div>
+                </div>
+
+                <div class="channels__item">
+                  <div class="channels__img">
+                    <img
+                      src="img/channelslogo4.png"
+                      alt=""
+                      class="channels__logo"
+                    />
+                  </div>
+                  <div class="channels__allinfo">
+                    <div class="channels__title">AMEDIA PREMIUM</div>
+                    <div class="channels__firstinfo">
+                      13:00 Клиент всегда мёртв
+                    </div>
+                    <div class="channels__info">
+                      14:00 Голодные игры: Сойка-пересмешница. Часть I
+                    </div>
+                    <div class="channels__info">
+                      15:00 Секс в большом городе
+                    </div>
+                  </div>
+                </div>
+
+                <div class="channels__item">
+                  <div class="channels__img">
+                    <img
+                      src="img/channelslogo2.png"
+                      alt=""
+                      class="channels__logo"
+                    />
+                  </div>
+                  <div class="channels__allinfo">
+                    <div class="channels__title">2x2</div>
+                    <div class="channels__firstinfo">
+                      13:00 МУЛЬТ ТВ. Сезон 4, 7 серия
+                    </div>
+                    <div class="channels__info">
+                      14:00 ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия
+                    </div>
+                    <div class="channels__info">
+                      15:00 БУРДАШЕВ. Сезон 1, 20 серия
+                    </div>
+                  </div>
+                </div>
+
+                <div class="channels__item">
+                  <div class="channels__img">
+                    <img
+                      src="img/channelslogo3.png"
+                      alt=""
+                      class="channels__logo"
+                    />
+                  </div>
+                  <div class="channels__allinfo">
+                    <div class="channels__title">РБК</div>
+                    <div class="channels__firstinfo">
+                      13:00 ДЕНЬ. Горючая смесь: как бороться с суррогатом на
+                      АЗС
+                    </div>
+                    <div class="channels__info">14:00 ДЕНЬ. Главные темы</div>
+                    <div class="channels__info">15:00 Главные новости</div>
+                  </div>
+                </div>
+
+                <div class="channels__item">
+                  <div class="channels__img">
+                    <img
+                      src="img/channelslogo4.png"
+                      alt=""
+                      class="channels__logo"
+                    />
+                  </div>
+                  <div class="channels__allinfo">
+                    <div class="channels__title">AMEDIA PREMIUM</div>
+                    <div class="channels__firstinfo">
+                      13:00 Клиент всегда мёртв
+                    </div>
+                    <div class="channels__info">
+                      14:00 Голодные игры: Сойка-пересмешница. Часть I
+                    </div>
+                    <div class="channels__info">
+                      15:00 Секс в большом городе
+                    </div>
+                  </div>
+                  <!-- Channels item -->
+                </div>
+              </div>
+              <!-- Container -->
+            </div>
+            <!-- Channels -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__img">
+            <img src="img/footerimg.png" alt="" class="footer__logo" />
+          </div>
+            <div class="footer__info">
+              <div class="footer__address">
+                426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла
+                Маркса, 246 (ДК «Металлург»)
+              </div>
+              <div class="footer__phone">
+                +7 (3412) 93-88-61, 43-29-29
+              </div>
+              <div>
+                <a class="footer__website" href="https://htc-cs.ru/" target="_blank">htc-cs.ru</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+      </footer>
+  
+      <!-- Modals -->
+  
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <div class="modal__inner">
+            <div class="modal__title">
+              Вход
+            </div>
+            <form id="auth" class="modal__form" action="#" method="post">
+              <input
+                name="login"
+                class="modal__input"
+                type="text"
+                form="auth"
+                placeholder="Логин"
+              />
+  
+              <input
+                name="password"
+                class="modal__input"  
+                type="password"
+                form="auth"
+                placeholder="Пароль"
+              />
+              <div class="modal__remember">
+                <input
+                  class="modal__remember-input"
+                  type="checkbox"
+                  form="auth"
+                  name="remember"
+                  checked
+                />
+                <label class="modal__remember-label" for="remember"
+                  >Запомнить</label
+                >
+              </div>
+              <button class="modal__btn" type="submit" form="auth">Войти</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

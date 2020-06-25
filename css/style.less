@@ -1,0 +1,62 @@
+// compress: true
+
+@import "vars";
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  color: @gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.channels__inner::-webkit-scrollbar {
+  width: 8px;
+  
+}
+
+.channels__inner::-webkit-scrollbar-track {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.channels__inner::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 8px;
+  
+}
+
+// Blocks
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/form";
+@import "blocks/btn";
+@import "blocks/tabs";
+@import "blocks/new";
+@import "blocks/genres";
+@import "blocks/footer";
+@import "blocks/channels";
+@import "blocks/modal";

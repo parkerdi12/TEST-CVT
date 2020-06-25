@@ -1,0 +1,40 @@
+// main: ../style.less
+
+.genres {
+  margin-top: 32px;
+}
+
+.genres__title {
+  font-size: 24px;
+  color: @gray;
+  font-weight: 500;
+}
+.genres__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.genres__item {
+  margin-top: 16px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.genres__info {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 35%;
+  text-align: center;
+}
+
+.genres__subtitle {
+  margin-top: 32px;
+  font-size: 20px;
+  color: @white;
+}

@@ -1,0 +1,104 @@
+// main: ../style.less
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(@gray, 0.6);
+}
+
+.modal-content {
+  width: 80%;
+  max-width: 304px;
+  margin: 15% auto;
+  padding-bottom: 36px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+
+.modal__title {
+  padding-top: 36px;
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  color: @gray;
+  text-align: center;
+}
+
+.modal__btn {
+  display: flex;
+  margin: 0 auto;
+  
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  color: @white;
+  background-color: @red;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #cc221b;
+  }
+}
+
+.modal__input {
+  width: 232px;
+  margin: 15px 35px;
+  padding-bottom: 6px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  color: @gray2;
+  border: 0px solid;
+  border-bottom: 1px solid @gray;
+  background: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &[type ="text"] {
+    color: @gray;
+    font-weight: 500;
+  }
+}
+
+.modal__remember {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 112px;
+}
+
+.modal__remember-input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  margin-left: 35px;
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.modal__remember-label {
+  font-size: 16px;
+  line-height: 19px;
+  color: @gray;
+
+  &:hover {
+    outline: none;
+  }
+}
+
+

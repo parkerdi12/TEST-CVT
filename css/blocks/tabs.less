@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.tabs {
+  margin-top: 44px;
+}
+
+.tabs__items {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.tabs__item {
+  font-size: 28px;
+  font-weight: 500;
+  color: @gray;
+  margin-left: 24px;
+
+  &:active {
+    color: @red;
+    border-bottom: 2px solid #e5261e;
+  }
+
+  &:hover {
+    color: @red;
+    border-bottom: 2px solid #e5261e;
+  }
+}
+
+.tabs__block {
+  display: none;
+}
+
+.tabs__block:target {
+  display: block;
+}
