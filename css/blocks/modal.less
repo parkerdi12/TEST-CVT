@@ -61,7 +61,8 @@
   font-family: inherit;
   font-weight: normal;
   font-size: 16px;
-  color: @gray2;
+  color: @gray;
+  font-weight: 500;
   border: 0px solid;
   border-bottom: 1px solid @gray;
   background: none;
@@ -70,9 +71,9 @@
     outline: none;
   }
 
-  &[type ="text"] {
-    color: @gray;
-    font-weight: 500;
+  &::placeholder {
+    color: @gray2;
+    font-weight: 300;
   }
 }
 

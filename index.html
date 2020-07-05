@@ -34,7 +34,10 @@
               />
               <input type="submit" for="input-search" class="form__label" value="Найти"></input>
             </form>
-            <button id="myBtn" class="btn" type="submit">
+            <!-- <input type="text" name="header__login" class="header__login" ></input> -->
+            <span id="result-login"></span>
+            <input class="btn--active" type="submit" value="Выйти"></input>
+            <button  id="myBtn" class="btn" type="submit">
               Войти
             </button>
           </div>
@@ -49,21 +52,21 @@
 
       <div class="container">
         <div class="tabs__body">
-          <div id="tabs_01" class="tabs__block">
+          <div id="tabs_01" class="tabs__block"> 
             <div class="new">
               <img class="new__logo" src="img/newslogo.png" />
               <div class="new__inner">
-                <div class="new__item">
+                <a class="new__item" href="#" target="_blank">
                   <img src="img/new1.png" alt="" />
                   <div class="new__title">
                     Мульт в кино. Выпуск №103. Некогда грустить!
                   </div>
-                </div>
-                <div class="new__item">
+                </a>
+                <a class="new__item" href="#" target="_blank">
                   <img src="img/new2.png" alt="" />
                   <div class="new__title">Новый Бэтмен</div>
-                </div>
-                <div class="new__item">
+                </a>
+                <a class="new__item" href="#" target="_blank">
                   <img class="new__image" src="img/new3.png" alt="" />
                   <div class="new__info">
                     Фильм повествует о череде событий, произошедших в Голливуде
@@ -72,11 +75,11 @@
                     в стремительно меняющемся мире киноиндустрии.
                   </div>
                   <div class="new__title">Однажды... в Голливуде</div>
-                </div>
-                <div class="new__item">
+                </a>
+                <a class="new__item" href="#" target="_blank">
                   <img class="new__image" src="img/new4.png" alt="" />
                   <div class="new__title">Стриптизёрши</div>
-                </div>
+                </a>
                 <!-- New inner -->
               </div>
               <!-- New -->
@@ -84,7 +87,7 @@
             <div class="genres">
               <div class="genres__title">Жанры</div>
               <div class="genres__inner">
-                <div class="genres__item">
+                <a class="genres__item" href="#" target="_blank">
                   <img class="genres__img" src="img/genres1.png" alt="" />
                   <div class="genres__info">
                     <img
@@ -94,8 +97,8 @@
                     />
                     <div class="genres__subtitle">Комедии</div>
                   </div>
-                </div>
-                <div class="genres__item">
+                </a>
+                <a class="genres__item" href="#" target="_blank">
                   <img class="genres__img" src="img/genres2.png" alt="" />
                   <div class="genres__info">
                     <img
@@ -105,8 +108,8 @@
                     />
                     <div class="genres__subtitle">Драмы</div>
                   </div>
-                </div>
-                <div class="genres__item">
+                </a>
+                <a class="genres__item" href="#" target="_blank">
                   <img class="genres__img" src="img/genres3.png" alt="" />
                   <div class="genres__info">
                     <img
@@ -116,8 +119,8 @@
                     />
                     <div class="genres__subtitle">Фантастика</div>
                   </div>
-                </div>
-                <div class="genres__item">
+                </a>
+                <a class="genres__item" href="#" target="_blank">
                   <img class="genres__img" src="img/genres4.png" alt="" />
                   <div class="genres__info">
                     <img
@@ -127,11 +130,13 @@
                     />
                     <div class="genres__subtitle">Ужасы</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
+
+<!-- channels -->
 
         <div id="tabs_02" class="tabs__block">
           <div class="channels">
@@ -322,35 +327,34 @@
             <div class="modal__title">
               Вход
             </div>
-            <form id="auth" class="modal__form" action="#" method="post">
+            <form class="modal__form" action="" method="GET">
               <input
+                id="login"
                 name="login"
                 class="modal__input"
                 type="text"
-                form="auth"
                 placeholder="Логин"
               />
   
               <input
+                id="password"
                 name="password"
                 class="modal__input"  
                 type="password"
-                form="auth"
                 placeholder="Пароль"
               />
               <div class="modal__remember">
                 <input
                   class="modal__remember-input"
                   type="checkbox"
-                  form="auth"
                   name="remember"
                   checked
                 />
-                <label class="modal__remember-label" for="remember"
+                <label class="modal__remember-label"
                   >Запомнить</label
                 >
               </div>
-              <button class="modal__btn" type="submit" form="auth">Войти</button>
+               <button class="modal__btn" id="check">Войти</button> 
             </form>
           </div>
         </div>
