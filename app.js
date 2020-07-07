@@ -10,11 +10,11 @@ const logoutButton = document.getElementById("btnClose");
 
 window.onload = function () {
   window.location.href = "#tabs_01";
+  userName.style.display = "block";
   userName.value = localStorage.getItem("nickname");
-};
-
-
-
+  btn.style.display = "none";
+  logoutButton.style.display = "block";
+  };
 // Modal
 
 btn.onclick = function () {
@@ -65,8 +65,6 @@ function login(login, password) {
     userName.value = user.nickname;
   } else {
     alert("Пользователь не найден!");
-    userName.style.display = 'none';
-    logoutButton.style.display = "none";
   }
 }
 
@@ -82,19 +80,8 @@ loginButton.onclick = function (event) {
   login(userLogin, userPassword);
 };
 
-window.onload = function (event) {
-  userName.style.display = 'block';
-  userName.value = localStorage.getItem("nickname");
-  btn.style.display = "none";
-  logoutButton.style.display = "block";
- };
-
 logoutButton.onclick = function () {
   btn.style.display = "block";
   userName.style.display = "none";
   logoutButton.style.display = "none";
 };
-
-
-
-
