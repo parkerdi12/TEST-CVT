@@ -16,33 +16,42 @@
   </head>
   <body>
     <header class="header">
-        <div class="container">
-          <div class="header__inner">
-            <div class="header__logo">
-              <div class="header__img">
-                <img src="img/headerlogo.png" alt="" />
-              </div>
-              <div class="header__title">Видеосервис</div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <div class="header__img">
+              <img src="img/headerlogo.png" alt="" />
             </div>
-            <form class="from" action="#" method="post">
-              <input
-                name="input-search"
-                class="form__input"
-                type="text"
-                id="input-search"
-                placeholder="Поиск..."
-              />
-              <input type="submit" for="input-search" class="form__label" value="Найти"></input>
-            </form>
-            
-            <span id="result-login"></span>
-            <input class="btn--active" type="submit" value="Выйти"></input>
-            <button  id="myBtn" class="btn" type="submit">
-              Войти
-            </button>
+            <div class="header__title">Видеосервис</div>
           </div>
+          <form class="from" action="#" method="post">
+            <input
+              name="input-search"
+              class="form__input"
+              type="text"
+              id="input-search"
+              placeholder="Поиск..."
+            />
+            <input
+              type="submit"
+              for="input-search"
+              class="form__label"
+              value="Найти"
+            />
+          </form>
+          <input
+            id="userName"
+            type="text"
+            name="header__login"
+            class="header__login"
+          />
+          <input id="btnClose" class="btn--active" type="submit" value="Выйти" />
+          <button id="myBtn" class="btn" type="submit">
+            Войти
+          </button>
         </div>
-      </header>
+      </div>
+    </header>
 
     <div class="tabs">
       <nav class="tabs__items">
@@ -52,7 +61,7 @@
 
       <div class="container">
         <div class="tabs__body">
-          <div id="tabs_01" class="tabs__block"> 
+          <div id="tabs_01" class="tabs__block">
             <div class="new">
               <img class="new__logo" src="img/newslogo.png" />
               <div class="new__inner">
@@ -136,7 +145,7 @@
           </div>
         </div>
 
-<!-- channels -->
+        <!-- channels -->
 
         <div id="tabs_02" class="tabs__block">
           <div class="channels">
@@ -297,68 +306,71 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-          <div class="footer__inner">
-            <div class="footer__img">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__img">
             <img src="img/footerimg.png" alt="" class="footer__logo" />
           </div>
-            <div class="footer__info">
-              <div class="footer__address">
-                426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла
-                Маркса, 246 (ДК «Металлург»)
-              </div>
-              <div class="footer__phone">
-                +7 (3412) 93-88-61, 43-29-29
-              </div>
-              <div>
-                <a class="footer__website" href="https://htc-cs.ru/" target="_blank">htc-cs.ru</a> 
-              </div>
+          <div class="footer__info">
+            <div class="footer__address">
+              426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла
+              Маркса, 246 (ДК «Металлург»)
             </div>
-          </div>
-        </div>
-        <!-- Footer -->
-      </footer>
-  
-      <!-- Modals -->
-  
-      <div class="modal" id="myModal">
-        <div class="modal-content">
-          <div class="modal__inner">
-            <div class="modal__title">
-              Вход
+            <div class="footer__phone">
+              +7 (3412) 93-88-61, 43-29-29
             </div>
-            <form class="modal__form" action="" method="GET">
-              <input
-                id="login"
-                name="login"
-                class="modal__input"
-                type="text"
-                placeholder="Логин"
-              />
-  
-              <input
-                id="password"
-                name="password"
-                class="modal__input"  
-                type="password"
-                placeholder="Пароль"
-              />
-              <div class="modal__remember">
-                <input
-                  class="modal__remember-input"
-                  type="checkbox"
-                  name="remember"
-                  checked
-                />
-                <label class="modal__remember-label"
-                  >Запомнить</label
-                >
-              </div>
-               <button class="modal__btn" id="check">Войти</button> 
-            </form>
+            <div>
+              <a
+                class="footer__website"
+                href="https://htc-cs.ru/"
+                target="_blank"
+                >htc-cs.ru</a
+              >
+            </div>
           </div>
         </div>
       </div>
+      <!-- Footer -->
+    </footer>
+
+    <!-- Modals -->
+
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <div class="modal__inner">
+          <div class="modal__title">
+            Вход
+          </div>
+          <form class="modal__form" action="" method="GET">
+            <input
+              id="login"
+              name="login"
+              class="modal__input"
+              type="text"
+              placeholder="Логин"
+            />
+
+            <input
+              id="password"
+              name="password"
+              class="modal__input"
+              type="password"
+              placeholder="Пароль"
+            />
+            <div class="modal__remember">
+              <input
+                class="modal__remember-input"
+                type="checkbox"
+                name="remember"
+                checked
+              />
+              <label class="modal__remember-label">Запомнить</label>
+            </div>
+            <button class="modal__btn" id="check">Войти</button>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <script src="./app.js"></script>
   </body>
